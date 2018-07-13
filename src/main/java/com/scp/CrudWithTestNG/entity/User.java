@@ -1,14 +1,36 @@
 package com.scp.CrudWithTestNG.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="userLogin")
 public class User {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	int id;
+	
+	@Column(name="userName",nullable = false)
 	String userId;
+	
+	@Column(name="password",nullable = false)
 	String password;
 	
 	
 	public User() {
 		super();
 	}
+	
+	public User(String userId, String password) {
+		this.userId = userId;
+		this.password = password;
+	}
+	
 	public User(int id, String userId, String password) {
 		super();
 		this.id = id;

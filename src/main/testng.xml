@@ -1,0 +1,7 @@
+<suite name="userAuthentication">
+	<test name="testngTest">
+		<classes>
+			<class name="com.scp.CrudWithTestNG.UserAuthenticationTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: kumbhas
+Built-By: User(LPT-APR2015-02)
 Build-Jdk: 1.8.0_20
 Created-By: Maven Integration for Eclipse
 
